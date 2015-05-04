@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" media="all" title="Bootstrap"/>
+<link rel="stylesheet" type="text/css" href="../css/eis_framework.css" media="all" title="Bootstrap"/>
+<script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/mega_menu.js"></script>
+<script>  
+<!--  // building select nav for mobile width only -->
+$(function(){
+	$('#mainMenu li').hover(
+        function() {
+            //show its submenu
+            $('ul', this).stop().slideDown(100);
+
+        },
+        function() {
+            //hide its submenu
+            $('ul', this).stop().slideUp(100);
+        }
+); 
+});
+//end
+</script>
+
+<title>SAS - Dashboard</title>
+</head>
+
+<body>
+<div class="body">
+<div id="header_wrap_metro"class="fluid_wrap reset">
+	<div id="header-metro" class="container">
+		<div class="col-lg-12 pl0 pr0">
+		<div id="logotipo_container" class="col-lg-4 pl0">
+			<a id="logotipo-metro" href="#"><h1><span>Logotipo GestPac</span></h1></a>
+		</div><!--end logotipo_container-->
+
+		<div id="" class="col-lg-8 fr pr0 pl0">
+					<ul id="mainMenu" class="parent nav-menu fr">
+						<li class="current study"><a class="study menu-item" href="http://www.freshdesignweb.com">home</a>
+							<ul style="display: none;" class="sub_menu">
+								<li class="arrow_top"></li>
+								<li class="subCurrent"><a  href="http://www.freshdesignweb.com">Home Service</a></li>
+								<li><a href="http://www.freshdesignweb.com">Home Responsive</a></li>
+							</ul>
+						</li>
+						<li class="reports "><a class="reports menu-item" href="http://www.freshdesignweb.com">about</a></li>
+						<li class="ae "><a class="menu-item" href="http://www.freshdesignweb.com">services</a></li>
+						<li class="userlogs ">
+							<a class="menu-item" href="http://www.freshdesignweb.com">portfolio</a>
+							<ul style="display: none;" class="sub_menu">
+								<li class="arrow_top"></li>
+								<li><a href="http://www.freshdesignweb.com">Portfolio 3 </a></li>
+								<li><a href="http://www.freshdesignweb.com">Portfolio 4 </a></li>
+								<li><a href="http://www.freshdesignweb.com">Portfolio Single</a></li>
+								<li><a href="http://www.freshdesignweb.com">Portfolio Two</a></li>
+							</ul>
+						</li>
+						<li class="assing ">
+							<a class="menu-item" href="http://www.freshdesignweb.com">blog</span></a>
+							<ul style="display: none;" class="sub_menu">
+								<li class="arrow_top"></li>
+								<li><a href="http://www.freshdesignweb.com">Design</a></li>
+								<li><a href="http://www.freshdesignweb.com/category/html5">HTML5</a></li>
+								<li><a href="http://www.freshdesignweb.com/category/css-html">CSS3</a>
+								</li><li><a href="http://www.freshdesignweb.com/category/ajax-jquery">jQuery</a></li>
+							</ul>
+						</li>
+					</ul>
+		</div><!--end user_options-->
+	</div>
+	</div><!--end header-->
+</div><!--header_wrap-->
+
+
+<div id="content_area_wrap_metro" class="repo fluid_wrap reset">
+	<div id="content_area" class="container">
+		<div class="col-lg-12 pl0 pr0">
+			<div class="section_title_metro fluid_wrap">
+				<ul class="col-lg-8 pl0">
+					<li class="fl">
+						<h1 class="the_title_metro">Reports</h1>
+					</li>
+				</ul>
+			</div><!--end section_title-->
+
+			<div id="dashboard_right_column" class="right_column_metro report col-lg-12 pr0 pl0">
+				<ul class="fl">
+					<li class="fl ml0">
+						<label>
+							<span class="elementtitle">Date From:</span>
+							<input type="text" />
+						</label>
+					</li>
+					<li class="fl">
+						<label>
+							<span class="elementtitle">Date To:</span>
+							<input type="text" />
+						</label>
+					</li>
+					<li class="fl">
+						<label>
+							<span class="elementtitle">Report Type:</span>
+							<input type="radio"><span>Detail</span>
+							<input type="radio"><span>Resume</span>
+						</label>
+					</li>
+					<li class="fl">
+						<label>
+							<span class="elementtitle">Report Type:</span>
+							<input type="radio"><span>Daily</span>
+							<input type="radio"><span>Weekley</span>
+							<input type="radio"><span>Monthly</span>
+						</label>
+					</li>
+					<li class="fl mn">
+						<input class="blue_metro_button metro_button" type="button" value="Search" />
+					</li>
+					<li class="notify_err mn">
+						<p class="error_notify_metro">Please fix the following input errors: Report Type cannot be blank.</p>
+					</li>
+				</ul>
+			</div><!--end dashboard_right_column-->
+		</div><!--end col-lg-12-->
+	</div><!--end content_area-->
+</div><!--en content_area_wrap-->
+
+<div id="footer_wrap_metro" class="fluid_wrap">
+	<div id="footer" class="container">
+		<div class="col-lg-12 pl0 pr0">
+			<div id="copyright_footer_metro" class="col-lg-4 pl0">
+				<p><img src="images/logofooter.png" width="110" height="42" alt="Footer SAS - Logo"/></p>
+				<p>Copyright 2013</p>
+				<p>Powered by <a href="http://eisdr.com/" target="new_blank">Excellent Integrity Solutions</a></p>
+			</div><!--end copyright_footer-->
+
+			<div id="footer_links_metro" class="col-lg-8 pl0 pr0">
+				<ul>
+					<li class="border_terms_conditions"><a href="#" class="terms_conditions">Términos y Condiciones</a></li>
+					<li class="border_support"><a href="#" class="support">Soporte</a></li>
+					<li class="border_contact"><a href="#" class="contact">Contacto</a></li>       
+				</ul>
+			</div><!--end footer_links-->
+		</div><!--end col-lg-12-->
+	</div><!--end footer-->
+</div><!--end footer_wrap-->
+
+<div id="user_options" class="relative_buttons_0 col-lg-8 fr pr0 pl0">
+	<ul class="user_options_items">
+		<li id="user_information_metro">
+			<div id="user">
+				<img src="../images/user_picture.png" width="40px" height="31" alt="Foto Usuario"/>
+				
+				<ul id="mainMenu" class="parent nav-menu settings_metro fl">
+
+					<li class="down_arrow"><a href="#" id="user_drop_down_menu">User menú</a>
+						<ul style="display: none;" class="sub_menu">
+							<li class="perfil_extended"><img src="images/user_picture.png" width="93px" height="83" alt="Foto Usuario"/></li>
+							<li class="sttings_metro_name">Wilsel Andrés Ventura</li>
+							<li class="sttings_metro_mail">wventura@eisdr.com</li>
+							<li class="sttings_metro_botton fl"><a href="#">My Account</a></li>
+							<li class="sttings_metro_botton fr"><a href="#">Sing Out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<a href="#" class="pt0">Carmen</a>
+		</li>
+	</ul>
+</div><!--end user_options-->
+
+<div class="relative_buttons">
+	<ul>
+		<li class="button_save_metro"><input class=" btstyles_metro col-lg-12" type="submit" value="Save" /></li>
+		<li class="button_cancel_metro"><input class=" btstyles_metro col-lg-12" type="submit" value="Cancel" /></li>
+		<li class="button_back_metro"><a class=" btstyles_metro col-lg-12" href="#">Back</a></li>
+	</ul>
+</div>
+
+</div>
+
+</body>
+</html>

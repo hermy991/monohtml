@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Factura - Diagnóstico</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+</head>
+
+<body>
+<div id="factura_wrap">
+	<div id="factura_header">
+		<img src="images/logotipo_imarad.png" width="190" height="71" alt="Logotipo"/>
+		<p>Dirección: Av. Ortega y Gasset  #856,  esquina Jhon F. Kennedy, Ensanche Kennedy </br>Teléfono: 787-000-0000 / Fax:  787-000-0000 Web: www.crm.com   Email: centroradiologicomonserrate@crm.com</p>
+	</div><!--end factura_header-->
+
+	<div id="date_container">
+		<p>Fecha: 12-01-2013</br>Hora: 12:45 PM</p>
+	</div><!--end date_container-->
+
+	<div id="visit_counter">
+		<p>Visita No.: 001234</p>
+	</div><!--end visit_counter-->
+
+	<div class="customer_info">
+		<ul>
+			<li>Resultado enviado por Mail</li>
+			<li><span class="bold_text_big">Perez Vargas, José Miguel</span></li>
+			<li>Av. Jhon F. Kennedy, esq. José Ortega y Gasset, Pleza Metroplitana Local 221, Sto. Dgo.</li>
+			<li>Plan Médico: HUMANA</li>
+			<li>Poliza no.:12456854</li>
+			<li>Médico:Francisco Reyes, Ramón</li>
+		</ul>
+		<div class="border_box">
+			<table class="factura">
+				<thead>
+					<tr>
+						<th>Código</th>	
+						<th>Cantidad</th>	
+						<th>Descripción</th>  
+						<th>Costo</th>  
+						<th>Deducible</th>   
+					</tr>          			                  
+				</thead>
+				<tbody>
+					<tr>
+						<td>0001</td>                       
+						<td>1</td>
+						<td>Radiografía Torax  </td>
+						<td>125.00</td>
+						<td>95.00</td>
+					</tr>
+					<tr>
+						<td>0001</td>                       
+						<td>3</td>
+						<td>Radiografía Abdomen</td>
+						<td>260.00</td>
+						<td>189.00</td>
+					</tr>
+					<tr>
+						<td>0001</td>                       
+						<td>1</td>
+						<td>Radiografía Magnética</td>
+						<td>58.00</td>
+						<td>25.00</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!--end border_box-->
+
+		<h3 class="center_title">Resultados por Internet</h3>
+		<ol>
+			<li>1.- Los resultados serán enviados al correo electrónico ccesa@eisdr.com.  Recibirá un correo electrónico </br> <span>“Resultado Centro Monserrate”.</span></li>
+      		
+      		<li>2. -Abrir el archivo PDF adjunto registrando la contraseña: </li>
+		</ol>
+		<h4 class="customer_password">ASDFGHJ</h4>
+
+		<ul class="customer_sign">
+			<li><label>Autorizo a</label><input type="text" class="autorizacion"/></li>
+			<li><label>Fecha entrega</label><input type="text" class="delivery_date"/>
+			<label class="doctor_sign_label">Firma</label><input type="text" class="doctor_sign"/></li>
+		</ul>
+	</div><!--end customer_info-->
+</div><!--end factura_wrap-->
+</body>
+</html>

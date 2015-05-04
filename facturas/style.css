@@ -1,0 +1,237 @@
+/**RESET DEFAULT WEB BROWSER STYLES**/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;}
+body {
+line-height: 1;}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;}
+/*-----------------------------------------------------------------------------*/
+
+/*RESET FLOATING ELEMENTS*/
+.reset:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+.reset{display: inline-block;}
+
+.reset{display:block;}
+*html.limpiar{ height:1px;}
+/*------------------------------------------------------------------*/
+
+/**FONTS IMPORT**/
+
+@font-face{
+font-family: Lato-Light;
+src:url(includes/fonts/Lato-Light.ttf);
+}
+
+@font-face{
+font-family: Lato-Regular;
+src:url(includes/fonts/Lato-Regular_0.ttf);
+}
+
+@font-face{
+font-family: Lato-Bold;
+src:url(includes/fonts/Lato-Bold.ttf);
+}
+
+@font-face{
+font-family: OpenSans-Light;
+src:url(includes/fonts/OpenSans-Light.ttf);
+}
+
+@font-face{
+font-family: OpenSans-Regular;
+src:url(includes/fonts/OpenSans-Regular.ttf);
+}
+/**/
+
+/**Factura Diagnostico**/
+/*global value*/
+div#factura_wrap ul, div#factura_wrap ul li,
+div#factura_wrap ol, div#factura_wrap ol li{
+float: left;
+width: 100%;
+line-height:22px;
+}
+
+div#factura_wrap ol{
+margin-top:5px;
+}
+
+div#factura_wrap h3.center_title,
+div#factura_wrap h4.customer_password{
+float: left;
+width: 100%;
+font-family: Lato-Bold, Arial;
+color:#262424;
+text-align: center;
+}
+
+div#factura_wrap h4.customer_password{
+margin:15px 0px;
+font-size: 20px;
+}
+
+div#factura_wrap h3.study_name{
+margin:40px 0px 5px 0px;
+font-size: 22px;
+}
+
+/***/
+
+div#factura_wrap{
+margin:auto;
+width:765px;
+height:813px;
+padding:18px;
+background: #fff;
+}
+
+div#factura_wrap div#factura_header{
+float: left;
+width: 100%;
+height:auto;
+padding-bottom: 5px;
+margin-bottom:10px;
+font-family: OpenSans-Regular, Arial;
+font-size: 14px;
+color:#262424;
+line-height: 21px;
+font-style: italic;
+border-bottom:1px dashed #939393;
+}
+
+div#factura_wrap div#date_container{
+float: left;
+width: 100%;
+margin-bottom:5px;
+text-align: right;
+font-family: Lato-Regular, Arial;
+font-size: 12px;
+color:#3d3b3b;
+line-height: 16px;
+}
+
+div#factura_wrap div#visit_counter{
+float: left;
+width: 100%;
+margin-bottom:5px;
+text-align:left;
+font-family: Lato-Regular, Arial;
+font-size: 14px;
+color:#434343;
+line-height: 18px;
+}
+
+div#factura_wrap div.customer_info{
+font-family: Lato-Regular, Arial;
+font-size: 14px;
+color:#434343;
+}
+
+div#factura_wrap div.customer_info ul li span.bold_text_big{
+font-size: 18px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+div#factura_wrap div.customer_info ol li span{
+font-family: Lato-Bold, Arial;
+}
+
+div#factura_wrap div.customer_info div.border_box{
+float: left;
+width:97%;
+padding:10px;
+margin:15px 0px 15px 0px;
+border:1px dashed #d1d1d1;
+}
+
+div#factura_wrap div.customer_info table.factura{
+float: left;
+width: 100%;
+text-align:left;
+}
+
+div#factura_wrap div.customer_info table.factura th{
+font-family: Lato-Bold, Arial;
+font-size: 14px;
+color:#262424;
+padding-bottom: 5px;
+} 
+
+div#factura_wrap div.customer_info table.factura thead tr{
+border-bottom:2px solid #4d4d4d;
+}
+
+div#factura_wrap ul.customer_sign label{
+float:left;
+width:94px;
+}
+
+div#factura_wrap ul.customer_sign li{
+line-height: 30px;
+}
+
+div#factura_wrap ul.customer_sign input{
+float: left;
+margin:0px;
+border:none;
+outline: none;
+border-bottom:1px solid #939393;
+}
+
+div#factura_wrap ul.customer_sign input.autorizacion{
+width: 670px;
+}
+
+div#factura_wrap ul.customer_sign input.delivery_date{
+width:300px;
+}
+
+div#factura_wrap ul.customer_sign input.doctor_sign{
+width:318px;
+}
+
+div#factura_wrap ul.customer_sign label.doctor_sign_label{
+width:47px;
+margin-left:5px;
+}
+
+/*Detalle del Diagnostico*/
+div#factura_wrap p.medical-sign span,
+div.customer_info ul li span.bold_text{
+line-height: 24px;
+text-decoration: underline;
+font-family: Lato-Bold, Arial;
+
+}
+
+

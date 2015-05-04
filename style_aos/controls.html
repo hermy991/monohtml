@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>EIS Framework - Controles</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" media="all" title="Bootstrap"/>
+<link rel="stylesheet" type="text/css" href="../css/eis_framework.css" media="all" title="Bootstrap"/>
+<script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/mega_menu.js"></script>
+</head>
+
+<body>
+<div id="header_wrap"class="fluid_wrap reset">
+	<div id="header" class="container">
+		<div class="col-lg-12">
+		<div id="logotipo_container" class="col-lg-4 pl0">
+			<a id="logotipo" href="#"><h1><span>Logotipo SAS</span></h1></a>
+		</div><!--end logotipo_container-->
+
+		<div id="user_options" class="col-lg-8 fr pr0 pl0">
+			<ul class="user_options_items">
+				<li id="user_information">
+					<div id="user">
+						<img src="images/user_picture.png" width="40px" height="31" alt="Foto Usuario"/>
+						<a href="#" id="user_drop_down_menu">User menú</a>
+					</div>
+					<a href="#" class="pt0">Carmen</a>
+				</li>
+				<li id="notifications"><a href="#">Notificaciones (150)</a></li>
+				<li id="support"><a href="#">Soporte</a></li>
+				<li id="logout"><a href="#">Cerrar Sesión</a></li>
+			</ul>
+		</div><!--end user_options-->
+	</div>
+	</div><!--end header-->
+</div><!--header_wrap-->
+
+<div id="navigation_wrap" class="fluid_wrap reset">
+	<div id="navigation" class="container">
+		<div class="col-lg-12 menu">
+			<ul>
+				<li><a href="botones.html" class="ui-state-default ui-corner-all">Botones</a></li>
+				<li><a href="input_text.html" id="" class="">Controles de Texto</a></li>
+				<li><a href="links.html" id="" class="">Botones tipo enlace</a></li>
+				<li><a href="tables.html" id="" class="">Tablas</a></li>
+				<li><a href="controls.html" id="" class="">Todos los controles</a></li>
+				<li><a href="detail.html" id="" class="">Facturas</a></li>
+			</ul>
+		</div><!--end col-lg-12-->
+	</div><!--end navigation-->
+</div><!--end navigation_top-->
+
+<div id="navigation_spanded_wrap" class="fluid_wrap">
+	<div id='navigation_spanded' class="container">
+		<div class="col-lg-12">
+			<div class="toggler fluid_wrap">
+				<div id="effect" class="ui-widget-content ui-corner-all hide">
+					<ul class="fluid_wrap">
+						<li><a href="#">Manuales</a></li>
+						<li><a href="#">Políticas</a></li>
+						<li><a href="#" class="active_child">Encuestas</a></li>
+						<li><a href="#">Objetivos</a></li>
+						<li><a href="#">Planes</a></li>
+						<li><a href="#">Programación Auditorías</a></li>
+						<li><a href="#">Procesos</a></li>
+						<li><a href="#">Procedimientos</a></li>
+						<li><a href="#">Instrucciones de Trabajo</a></li>
+						<li><a href="#">Formato/Formulario</a></li>
+						<li><a href="#">Indicadores</a></li>
+						<li><a href="#">Otros</a></li>
+					</ul>
+				</div>
+
+				<div id="effect2" class="ui-widget-content ui-corner-all hide">
+					<h1>ELEMENTO  1</h1>
+				</div>
+
+				<div id="effect3" class="ui-widget-content ui-corner-all hide">
+				<h1>ELEMENTO 3</h1>
+				</div>
+
+				<div id="effect4" class="ui-widget-content ui-corner-all hide">
+					<h1>ELEMENTO 4</h1>
+				</div>
+
+				<div id="effect5" class="ui-widget-content ui-corner-all hide">
+					<h1>ELEMENTO 5</h1>
+				</div>
+
+				<select hidden name="effects" id="effectTypes"><option value="blind">Blind</option></select>
+			</div><!--end toggler-->
+		</div><!--end col-lg-12-->
+	</div><!--end navigation_spanded-->
+</div><!--end navigation_spanded-->
+
+<div id="content_area_wrap" class="fluid_wrap reset">
+	<div id="content_area" class="container">
+		<div class="col-lg-12">
+			<div class="section_title fluid_wrap">
+				<div class="col-lg-8 pl0"><h1 class="the_title">Controles y Formularios</h1></div>
+				<div class="col-lg-4 pr0"><a class="section_add_button" href="#">Add Button</a></div>
+			</div><!--end section_title-->
+				<div class="drag_and_drop_container fluid_wrap reset doc_en_proceso">
+					<div class="drag_container_title">
+						<h2>Tareas Pendientes</h2>
+						<ul class="drag_container_buttons">
+							<li><a href="#" class="setting">Settings</a></li>
+							<li><a href="#" class="add">Add</a></li>
+							<li><a href="#" class="close_this">Close</a></li>
+						</ul>
+					</div><!--end drag_container_title-->
+
+					<div class="drag_container_the_content_area drag_content_area_fluid_wrap">
+							<form id="" class="standard_form fluid_wrap">
+								<ul class="form_items_container col-lg-4 pl0">
+									<li><label for="nombre">Nombre</label>
+										<input type="text" id="nombre" class="col-lg-12 form-control" name="nombre" value="" placeholder=""/>
+										<!--<span class="validation_error_tag">Datos incorrectos, vuelta a intentarlo</span>-->
+									</li>
+									<li><label for="apellidos">Apellidos</label>
+										<input type="text" id="apellidos" class="col-lg-12 form-control" name="apellidos" value="" placeholder=""/>
+									</li>
+									<li><label for="birthday">Fecha de nacimiento</label>
+										<input type="text" id="birthday" class="col-lg-12 form-control" name="birthday" value="" placeholder=""/>
+									</li>
+									<li><label class="subtitle_label">Información del Cliente</label>
+									<li><label for="others_dates">Otras Informaciones</label>
+										<input type="text" id="others_dates" class="col-lg-12 form-control" name="others_dates" value="" placeholder=""/>
+									</li>
+									<li><label for="localidad">Localidad</label>
+										<div class="dropdown fluid_wrap">
+										<select id="localidad" class="col-lg-12 form-control dropdown-select" name="localidad">
+											<option>Santo Domingo</option>
+											<option>Bonao</option>
+											<option>Barahona</option>
+										</select>
+									</div>
+									</li>
+									<li><label for="descripcion">Descripción</label>
+										<textarea id="descripcion" class="col-lg-12 form-control" name="description" value="" placeholder=""></textarea>
+									</li>
+									<li>
+										<input type="button" id="" class="button_add btstyles col-lg-5 ml0" value="Agregar">
+										<input type="button" id="" class="button_save btstyles col-lg-5" value="Guardar">
+									</li>
+								</ul>
+
+								<ul class="form_items_container col-lg-4 pr0">
+									<label class="subtitle_label">Información de la Empresa</label>
+									<li><label for="salario">Salario</label>
+										<input type="text" id="salario" class="col-lg-12 form-control" name="salario" value="" placeholder=""/>
+									</li>
+									<li><label for="empleado">Empleado</label>
+										<input type="text" id="empleado" class="col-lg-12 form-control" name="empleado" value="" placeholder=""/>
+									</li>
+									<li><label for="descripcion">Descripción</label>
+										<textarea id="descripcion" class="col-lg-12 form-control textarea_level2" name="description" value="" placeholder=""></textarea>
+									</li>
+								    <li><label for="descripcion">Multiple Select</label>
+							          	<select data-placeholder="Your Favorite Types of Bear" multiple class="chosen-select col-lg-12 form-control dropdown-select" tabindex="8">
+							            <option value=""></option>
+							            <option>American Black Bear</option>
+							            <option>Asiatic Black Bear</option>
+							            <option>Brown Bear</option>
+							            <option>Giant Panda</option>
+							            <option selected>Sloth Bear</option>
+							            <option disabled>Sun Bear</option>
+							            <option selected>Polar Bear</option>
+							            <option disabled>Spectacled Bear</option>
+							          	</select>
+									</li>
+									<li><a href="#" class="add_link button_link" id="">Agregar</a></br>
+										<a href="#" class="delete_link button_link" id="">Eliminar</a></br>
+										<a href="#" class="edit_link button_link" id="">Editar</a></br>
+										<a href="#" class="go_back_link button_link" id="">Volver atrás</a></br>
+										<a href="#" class="home_link button_link" id="">Ir a Inicio</a></br>
+									</li>
+								</ul>
+								<ul class="form_items_container col-lg-4 pr0">
+									<li>
+										<input type="button" id="" class="button_add btstyles col-lg-5" value="Agregar">
+										<input type="button" id="" class="button_save btstyles col-lg-5" value="Guardar">
+										<input type="button" id="" class="button_delete btstyles col-lg-5" value="Eliminar">
+										<input type="button" id="" class="button_go_back btstyles col-lg-5" value="Volver">
+										<input type="button" id="" class="button_foward btstyles col-lg-5" value="Siguiente">
+										<input type="button" id="" class="button_cancel btstyles col-lg-5" value="Cancelar">
+										<input type="button" id="" class="button_generic btstyles col-lg-5" value="Generico">
+										<input type="button" id="" class="fl small_btsstyle small_button_add" value="Add">
+									</li>
+
+									<li><label>A Buttons</label>
+										<a href="#" class="button_add btstyles col-lg-5">Agregar</a>
+										<a href="#" class="button_save btstyles col-lg-5">Guardar</a>
+										<a href="#" class="button_delete btstyles col-lg-5">Eliminar</a>
+										<a href="#" class="button_go_back btstyles col-lg-5">Volver</a>
+										<a href="#" class="button_foward btstyles col-lg-5">Siguiente</a>
+										<a href="#" class="button_cancel btstyles col-lg-5">Cancelar</a>
+										<a href="#" class="button_generic btstyles col-lg-5">Generico</a>
+										<a href="" class="fl small_btsstyle small_button_add">Add</a>
+									</li>
+								</ul>
+
+								<ul class="form_items_container col-lg-12 pl0 pr0">
+									<label class="subtitle_label">Campos Paralelos 4 Columnas</label>
+									<li><span class="parallel_field col-lg-3 pl0">
+											<label for="nombre2">Nombre</label>
+											<input type="text" name="nombre" id="nombre2" class="form-control col-lg-12"/>
+										</span>
+
+										<span class="parallel_field col-lg-3 pl0 ">
+											<label for="apellido">Apellido</label>
+											<input type="text" name="apellido" id="apellido" class="form-control col-lg-12"/>
+										</span>
+
+										<span class="parallel_field col-lg-3 pl0 ">
+											<label for="edad">Edad</label>
+											<input type="text" name="edad" id="edad" class="form-control col-lg-12"/>
+										</span>
+
+										<span class="parallel_field col-lg-3 pl0 pr0">
+											<label for="ciudad">Ciudad</label>
+											<input type="text" name="ciudad" id="ciudad" class="form-control col-lg-12"/>
+										</span>
+									</li>
+								</ul>
+
+								<ul class="form_items_container col-lg-12 pl0 pr0">
+									<label class="subtitle_label">Campos Paralelos 6 Columnas</label>
+									<li><span class="parallel_field col-lg-2 pl0">
+											<label for="nombre2">Nombre</label>
+											<input type="text" name="nombre3" id="nombre3" class="form-control col-lg-12"/>
+										</span>
+
+										<span class="parallel_field col-lg-2 pl0 ">
+											<label for="apellido2">Apellido</label>
+											<input type="text" name="apellido2" id="apellido3" class="form-control col-lg-12"/>
+										</span>
+
+										<span class="parallel_field col-lg-2 pl0 ">
+											<label for="edad2">Edad</label>
+											<input type="text" name="edad2" id="edad2" class="form-control col-lg-12"/>
+										</span>
+
+										<span class="parallel_field col-lg-2 pl0">
+											<label for="ciudad2">Ciudad</label>
+											<input type="text" name="ciudad2" id="ciudad2" class="form-control col-lg-12"/>
+										</span>
+
+										<span class="parallel_field col-lg-2 pl0">
+											<label for="salario">Salario</label>
+											<input type="text" name="salario" id="salario" class="form-control col-lg-12"/>
+										</span>
+
+										<span class="parallel_field col-lg-2 pl0 pr0">
+											<label for="departamento">Departamento</label>
+											<input type="text" name="departamento" id="departamento" class="form-control col-lg-12"/>
+										</span>
+									</li>
+								</ul>
+
+							</form><!--end eis_form-->
+					</div><!--end drag_container_the_content_area-->
+				</div><!--end drag_and_drop_container-->
+
+			<div class="drag_and_drop_container fluid_wrap reset doc_en_proceso">
+					<div class="drag_container_title">
+						<h2>Tareas Pendientes</h2>
+						<ul class="drag_container_buttons">
+							<li><a href="#" class="setting">Settings</a></li>
+							<li><a href="#" class="add">Add</a></li>
+							<li><a href="#" class="close_this">Close</a></li>
+						</ul>
+					</div><!--end drag_container_title-->
+
+					<div class="drag_container_the_content_area">
+						<div class="components_wrap fluid_wrap">
+							<form class="standard_form">
+								<ul class="form_items_container col-lg-12 pl0 pr0">
+									<li><span class="parallel_field col-lg-4">
+											<label for="nombre2">Nombre</label>
+											<input type="text" name="nombre" id="nombre2" class="form-control col-lg-12"/>
+										</span>
+
+										<span class="parallel_field col-lg-4">
+											<label for="apellido">Apellido</label>
+											<input type="text" name="apellido" id="apellido" class="form-control col-lg-12"/>
+										</span>
+
+										<span class="parallel_field col-lg-4">
+											<label for="edad">Edad</label>
+											<input type="text" name="edad" id="edad" class="form-control col-lg-12"/>
+										</span>
+									</li>
+								</ul>
+							</form>
+						</div><!--end components_wrap-->
+						<div class="data_table_container fluid_wrap">
+							<table class="eis_table table">
+								<tr>
+									<th></th>
+									<th>Tarea</th>
+									<th>Sistema</th>
+									<th>Tiempo</th>
+									<th>Indicador</th>
+								</tr>
+								<tr>
+									<td><input type="checkbox"/></td>
+									<td>Tristique enim cras hac augue nunc, nunc, ac augue  ac.</td>
+									<td>Porta magna sociis tempor in pid</td>
+									<td>3 de 15</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"/></td>
+									<td>Tristique enim cras hac augue nunc, nunc, ac augue  ac.</td>
+									<td>Porta magna sociis tempor in pid</td>
+									<td>3 de 15</td>
+									<td><span class="alight_center"><a href="#" class="delete_link button_link" id="">Eliminar</a>
+										<a href="#" class="edit_link button_link" id="">Editar</a>
+										<a href="#" class="add_link button_link" id="">Agregar</a>
+										</span>
+									</td>
+								</tr>
+							</table>
+						</div><!--end data_table_container-->
+					</div><!--end drag_container_the_content_area-->
+				</div><!--end drag_and_drop_container-->
+
+		</div><!--end col-lg-12-->
+	</div><!--end content_area-->
+</div><!--en content_area_wrap-->
+
+<div id="footer_wrap" class="fluid_wrap">
+	<div id="footer" class="container">
+		<div class="col-lg-12">
+			<div id="copyright_footer" class="col-lg-5 pl0">
+				<p><img src="../images/logotipo_footer.png" width="241" height="48" alt="Footer SAS - Logo"/></p>
+				<p>Copyright 2013</p>
+				<p>Powered by <a href="http://eisdr.com/" target="new_blank">Excellent Integrity Solutions</a></p>
+			</div><!--end copyright_footer-->
+
+			<div id="footer_links" class="col-lg-7 pl0">
+				<ul>
+					<li><a href="#" class="terms_conditions">Términos y Condiciones</a></li>
+					<li><a href="#" class="support">Soporte</a></li>
+					<li><a href="#" class="contact">Contacto</a></li>       
+				</ul>
+			</div><!--end footer_links-->
+		</div><!--end col-lg-12-->
+	</div><!--end footer-->
+</div><!--end footer_wrap-->
+
+<script src="../js/chosen.jquery.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	var config = {
+	  '.chosen-select'           : {},
+	  '.chosen-select-deselect'  : {allow_single_deselect:true},
+	  '.chosen-select-no-single' : {disable_search_threshold:10},
+	  '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+	  '.chosen-select-width'     : {width:"95%"}
+	}
+	for (var selector in config) {
+	  $(selector).chosen(config[selector]);
+	}
+</script>
+
+</body>
+</html>
